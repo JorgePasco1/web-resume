@@ -1,0 +1,17 @@
+#educationSection {
+  height: 72vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 1fr 1fr;
+}
+
+#edSecChildSubtitle {
+  text-align: center;
+}
+
+.subSection-content {
+  font-family: 'Exo', sans-serif;
+  font-size: 5vh;
+  color: white;
+  text-align: center;
+}

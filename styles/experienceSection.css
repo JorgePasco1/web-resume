@@ -1,0 +1,12 @@
+#experienceSection {
+  height: 123vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 4fr 2fr 2fr;
+}
+
+.experienceSection-titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -46,3 +46,7 @@
   color: var(--main-blue);
   text-align: justify;
 }
+
+.bullet {
+  color: var(--main-red);
+}
