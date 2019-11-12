@@ -1,0 +1,77 @@
+:root{
+  --main-blue: #011627;
+  --main-yellow: #ff9f1c;
+  --main-red: #D1021C;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 60vh;
+  width: 100%;
+  background-color: var(--main-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  width: 75%;
+  height: 80%;
+  display: flex;
+}
+
+.header-child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-left-child {
+  margin: 0;
+}
+
+.name {
+  font-family: "Exo", sans-serif;
+  color: var(--main-yellow) ;
+  font-size: 12vh;
+  font-weight: bold;
+}
+
+.speciality {
+  font-family: "Exo", sans-serif;
+  color: white;
+  font-size: 4.23vh;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.email {
+  font-family: "Exo", sans-serif;
+  color: white;
+  font-size: 4.23vh;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: normal;
+}
+
+.phone {
+  font-family: "Exo", sans-serif;
+  color: white;
+  font-size: 4.23vh;
+  font-weight: normal;
+}
+
+.header-child-right{
+  display: flex;
+  align-items: center;
+}
+
+#profile-picture {
+  width: 45vh;
+  border-radius: 100%;
+}

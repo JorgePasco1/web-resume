@@ -1,0 +1,48 @@
+.yellowSection {
+  background-color: var(--main-yellow);
+}
+
+#aboutSection {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.aboutSection-titleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 1/ 2;
+}
+
+.sectionTitle {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 6.5vh;
+  font-weight: 900;
+}
+
+.sectionTitle:hover {
+  text-decoration: underline;
+}
+
+.redTitle {
+  color: var(--main-red);
+}
+
+.aboutSection-body {
+  grid-column: 1/2;
+  grid-row: 2/-1;
+  padding: 0 5% 0 5%;
+}
+
+.main-text {
+  font-family: "Exo", sans-serif;
+  font-weight: 900;
+  font-size: 3.5vh;
+  color: var(--main-blue);
+  text-align: justify;
+}
