@@ -29,26 +29,121 @@
   align-items: center;
 }
 
-.skillsSection-aptContainer {
+.skillsSection-profSkillsContainer {
   grid-column: 1/2;
   grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15% 0 10%;
 }
 
 .yellowTitle {
   color: var(--main-yellow);
 }
 
-.subSection-title{
+.subSection-title {
   justify-self: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 900;
   font-size: 5vh;
   color: var(--main-yellow);
 }
 
 .skillsContent {
-  font-family: 'Exo', sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill {
+  font-family: "Exo", sans-serif;
   font-weight: 800;
   font-size: 5vh;
   color: var(--main-blue);
+  width: 60%;
+  text-align: center;
+  align-self: center;
 }
+
+.circle-group {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coloredCircle {
+  width: 2.7vw;
+  height: 2.7vw;
+  border-radius: 50%;
+  background-color: var(--main-blue);
+}
+
+.borderCircle {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  border: 2px solid var(--main-blue);
+}
+
+.profSkills-titleContainer {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.profSkills-contentContainer {
+  height: 50%;
+  width: 100%; 
+}
+
+.bottomBlankSpace {
+  height: 20%;
+  width: 100%;
+}
+
+.profSkills-contentContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+    "pro pro inv ar"
+    "cr lid ad ad"
+  ;
+}
+
+.profSkillItem {
+  width: 100%;
+}
+
+#pro {
+  grid-area: pro;
+}
+
+#inv {
+  grid-area: inv;
+  justify-self: start;
+}
+
+#ar {
+  grid-area: ar;
+}
+
+#cr {
+  grid-area: cr;
+}
+
+#lid {
+  grid-area: lid;
+}
+
+#ad {
+  grid-area: ad;
+}
+
+
+
+
+
+
