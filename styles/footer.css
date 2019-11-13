@@ -1,0 +1,23 @@
+#footer {
+  height: 8.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueSection a {
+  display: flex;
+  align-items: center;
+}
+
+
+.blueSection a img {
+  height: 7vh;
+  width: auto;
+  margin: 0 2vh 0 2vh;
+  filter: saturate(0);
+}
+
+.blueSection a img:hover{
+  filter: saturate(0.9);
+}

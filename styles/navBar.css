@@ -8,8 +8,9 @@
 }
 
 .buttonContainer {
-  
   width: 100%;
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
   font-size: 3.2vh;

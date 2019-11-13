@@ -1,12 +1,38 @@
 #experienceSection {
-  height: 123vh;
+  height: 135vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.5fr 4fr 2fr 2fr;
+  padding: 0 18% 0 18%;
 }
 
 .experienceSection-titleContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mainRed {
+  color: var(--main-red);
+}
+
+#experienceSection .subSection-title {
+  text-align: center;
+}
+
+.subSection-subTitle {
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 5vh;
+}
+
+.experienceContent {
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  font-size: 4vh;
+  color: var(--main-blue);
+  text-align: center;
+  margin: 1.5vh 0 1.5vh 0;
 }

@@ -46,6 +46,9 @@
   font-family: "Segoe UI", sans-serif;
   font-weight: 900;
   font-size: 5vh;
+}
+
+.mainYellow {
   color: var(--main-yellow);
 }
 
@@ -95,7 +98,7 @@
 
 .profSkills-contentContainer {
   height: 50%;
-  width: 100%; 
+  width: 100%;
 }
 
 .bottomBlankSpace {
@@ -107,10 +110,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 
+  grid-template-areas:
     "pro pro inv ar"
-    "cr lid ad ad"
-  ;
+    "cr lid ad ad";
 }
 
 .profSkillItem {
@@ -141,9 +143,3 @@
 #ad {
   grid-area: ad;
 }
-
-
-
-
-
-
