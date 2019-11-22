@@ -1,0 +1,6 @@
+.anchor {
+  height: 12vh;
+  background: var(--main-yellow);
+  margin-top: -12vh;
+  visibility: hidden;
+}
