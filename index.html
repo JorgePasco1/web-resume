@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/experienceSection.css">
     <link rel="stylesheet" href="./styles/extraSection.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <script src="./scripts/sticky.js" defer></script>
   </head>
   <body>
     <div class="blueSection header">
@@ -33,7 +34,7 @@
       </div>
     </div>
 
-    <div class="blueSection navBar">
+    <div class="blueSection navBar content" id="navBar">
       
       <div class="buttonContainer">
           <a class="headButton" href="#aboutSection">SOBRE MÍ</a>
@@ -53,201 +54,204 @@
 
     </div>
 
-    <div class="yellowSection" id="aboutSection">
+    <div class="content">
+      <div class="yellowSection" id="aboutSection">
 
-      <div class="aboutSection-titleContainer">
-        <a class="sectionTitle redTitle" href="#aboutSection">SOBRE MÍ</a>
+        <div class="aboutSection-titleContainer">
+          <a class="sectionTitle redTitle" href="#aboutSection">SOBRE MÍ</a>
+        </div>
+        
+        <div class="aboutSection-body">
+          <p class="main-text aboutText" id="firstParagraph"><span class="bullet">• </span>Estudiante de último ciclo de Ingeniería Industrial y de Sistemas en la Universidad de Piura, Piura,Perú. Mis fortalezas son las Tecnologías de Información y la Gestión e Investigación de Operaciones.</p>
+          <p class="main-text aboutText"><span class="bullet">• </span>Tengo experiencia liderando grupos de trabajo proactivamente. Me comunico efectivamente con las personas y tengo una alta capacidad de persuasión.</p>
+          <p class="main-text aboutText"><span class="bullet">• </span>Sobresaliente capacidad para el Planeamiento Estratégico. Tengo una alta capacidad de análisis de datos y de pensamiento lógico y crítico. Soy un excelente investigador y autodidacta.</p>
+        </div>
+  
       </div>
-      
-      <div class="aboutSection-body">
-        <p class="main-text aboutText" id="firstParagraph"><span class="bullet">• </span>Estudiante de último ciclo de Ingeniería Industrial y de Sistemas en la Universidad de Piura, Piura,Perú. Mis fortalezas son las Tecnologías de Información y la Gestión e Investigación de Operaciones.</p>
-        <p class="main-text aboutText"><span class="bullet">• </span>Tengo experiencia liderando grupos de trabajo proactivamente. Me comunico efectivamente con las personas y tengo una alta capacidad de persuasión.</p>
-        <p class="main-text aboutText"><span class="bullet">• </span>Sobresaliente capacidad para el Planeamiento Estratégico. Tengo una alta capacidad de análisis de datos y de pensamiento lógico y crítico. Soy un excelente investigador y autodidacta.</p>
-      </div>
-
-    </div>
-
-    <div class="redSection" id="skillsSection">
-      <div class="blueSection-titleContainer">
-        <a class="sectionTitle yellowTitle" href="#skillsSection">HABILIDADES</a>
-      </div>
-
-      <div class="skillsSection-devContainer">
-        <div class="subSection-title mainYellow">
-          <div>DESARROLLO</div>
+  
+      <div class="redSection" id="skillsSection">
+        <div class="blueSection-titleContainer">
+          <a class="sectionTitle yellowTitle" href="#skillsSection">HABILIDADES</a>
         </div>
-        <div class="skillsContent">
-          <div class="skill">HTML5 & CSS3</div>
-          <div class="circle-group">
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="borderCircle"></div>
-          </div>
-        </div>
-        <div class="skillsContent">
-          <div class="skill">JavaScript ES6</div>
-          <div class="circle-group">
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="borderCircle"></div>
-            <div class="borderCircle"></div>
-          </div>
-        </div>
-        <div class="skillsContent">
-          <div class="skill">Base de Datos (SQL)</div>
-          <div class="circle-group">
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="borderCircle"></div>
-            <div class="borderCircle"></div>
-          </div>
-        </div>
-        <div class="skillsContent">
-          <div class="skill">Responsive Design</div>
-          <div class="circle-group">
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="borderCircle"></div>
-            <div class="borderCircle"></div>
-          </div>
-        </div>
-        <div class="subSection-title mainYellow">
-          DISEÑO
-        </div>
-        <div class="skillsContent">
-          <div class="skill">Adobe Photoshop</div>
-          <div class="circle-group">
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="borderCircle"></div>
-            <div class="borderCircle"></div>
-          </div>
-        </div>
-        <div class="skillsContent">
-          <div class="skill">Adobe Illustrator</div>
-          <div class="circle-group">
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="borderCircle"></div>
-            <div class="borderCircle"></div>
-          </div>
-        </div>
-        <div class="skillsContent">
-          <div class="skill">Adobe XD</div>
-          <div class="circle-group">
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="coloredCircle"></div>
-            <div class="borderCircle"></div>
-            <div class="borderCircle"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skillsSection-profSkillsContainer">
-        <div class="profSkills-titleContainer">
+  
+        <div class="skillsSection-devContainer">
           <div class="subSection-title mainYellow">
-            APTITUDES PROFESIONALES
+            <div>DESARROLLO</div>
+          </div>
+          <div class="skillsContent">
+            <div class="skill">HTML5 & CSS3</div>
+            <div class="circle-group">
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="borderCircle"></div>
+            </div>
+          </div>
+          <div class="skillsContent">
+            <div class="skill">JavaScript ES6</div>
+            <div class="circle-group">
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="borderCircle"></div>
+              <div class="borderCircle"></div>
+            </div>
+          </div>
+          <div class="skillsContent">
+            <div class="skill">Base de Datos (SQL)</div>
+            <div class="circle-group">
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="borderCircle"></div>
+              <div class="borderCircle"></div>
+            </div>
+          </div>
+          <div class="skillsContent">
+            <div class="skill">Responsive Design</div>
+            <div class="circle-group">
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="borderCircle"></div>
+              <div class="borderCircle"></div>
+            </div>
+          </div>
+          <div class="subSection-title mainYellow">
+            DISEÑO
+          </div>
+          <div class="skillsContent">
+            <div class="skill">Adobe Photoshop</div>
+            <div class="circle-group">
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="borderCircle"></div>
+              <div class="borderCircle"></div>
+            </div>
+          </div>
+          <div class="skillsContent">
+            <div class="skill">Adobe Illustrator</div>
+            <div class="circle-group">
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="borderCircle"></div>
+              <div class="borderCircle"></div>
+            </div>
+          </div>
+          <div class="skillsContent">
+            <div class="skill">Adobe XD</div>
+            <div class="circle-group">
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="coloredCircle"></div>
+              <div class="borderCircle"></div>
+              <div class="borderCircle"></div>
+            </div>
           </div>
         </div>
-        <div class="profSkills-contentContainer">
-          <div class="skill profSkillItem" id="pro">Proactividad y eficiencia</div>
-          <div class="skill profSkillItem" id="inv">Investigación</div>
-          <div class="skill profSkillItem" id="ar">Apredizaje rápido</div>
-          <div class="skill profSkillItem" id="cr">Creatividad</div>
-          <div class="skill profSkillItem" id="lid">Liderazgo</div>
-          <div class="skill profSkillItem" id="ad">Adaptación al cambio y versatilidad</div>
-        </div>
-        <div class="bottomBlankSpace"></div>
-      </div>
-
-    </div>
-
-    <div class="blueSection" id="educationSection">
-      <div class=" blueSection-titleContainer">
-        <a class="sectionTitle yellowTitle" href="#educationSection">EDUCACIÓN</a>
-      </div>
-
-      <div class="educationSection-body1">
-        <div class="subSection-title mainYellow" id="edSecChildSubtitle">
-          <div>COLEGIO SAN AGUSTÍN DE CHICLAYO | PERÚ</div>
-        </div>
-        <div class="subSection-content">Programa del Diploma de Bachillerato Internacional</br>Obtención del Diploma (2013)
-        </div>
-      </div>
-
-      <div class=" educationSection-body2">
-        <div class="subSection-title mainYellow" id="edSecChildSubtitle">
-          <div>UNIVERSIDAD DE PIURA | PERÚ</div>
-        </div>
-        <div class="subSection-content">Ingeniería Industrial y de Sistemas</br>Estudiante de último ciclo (2014-2019)
-        </div>
-      </div>
-    </div>
-
-    <div class="yellowSection" id="experienceSection">
-      <div class="experienceSection-titleContainer">
-        <a class="sectionTitle redTitle" href="#experienceSection">EXPERIENCIA</a>
-      </div>
-
-      <div class="experienceSection-body1">
-        <div class="subSection-title mainRed">BASTER ESCUELA DE TENIS DE MESA | CHICLAYO</div>
-        <div class="subSection-subTitle mainRed">SECRETARIO GENERAL (2017 - ACTUALIDAD)</div>
-        <div class="experienceContent">Gestionar convenios con instituciones educativas y convenios de colaboración mutua</div>
-        <div class="experienceContent">Gestionar auspicios con instituciones privadas y públicas para el abastecimiento de la escuela</div>
-        <div class="experienceContent">Gestionar alianzas de entrenamiento con países vecinos</div>
-        <div class="experienceContent">Organización de torneos de confraternidad</div>
-        <div class="experienceContent">Elaboración del logotipo de la Escuela</div>
-      </div>
-
-      <div class="experienceSection-body2">
-        <div class="subSection-title mainRed">MOLINERA SUDAMÉRICA | LAMBAYEQUE</div>
-        <div class="subSection-subTitle mainRed">ASISTENTE DE CONTROL DE CALIDAD (2019)</div>
-        <div class="experienceContent">Evaluar los parámetros de calidad del grano de arroz en cada etapa del proceso de secado y pilado</div>
-      </div>
-
-      <div class="experienceSection-body3">
-        <div class="subSection-title mainRed">COLEGIO SAN AGUSTÍN | CHICLAYO</div>
-        <div class="subSection-subTitle mainRed">PROFESOR DE TENIS DE MESA (2011)</div>
-        <div class="experienceContent">Profesor del grupo de iniciación de alumnos de 8-9 años</div>
-      </div>
-
-    </div>
-
-    <div class="redSection" id="extraSection">
-      <div class="extraSection-child">
-          <div class=" blueSection-titleContainer">
-            <a class="sectionTitle yellowTitle" href="#extraSection">IDIOMAS</a>
+  
+        <div class="skillsSection-profSkillsContainer">
+          <div class="profSkills-titleContainer">
+            <div class="subSection-title mainYellow">
+              APTITUDES PROFESIONALES
+            </div>
           </div>
-          <div class="subSection-title yellowTitle">ESPAÑOL</div>
-          <div class="experienceContent">Nativo</div>
-          <div class="subSection-title yellowTitle">INGLÉS</div>
-          <div class="experienceContent">Avanzado. Nivel B2+ en el MCER<br>(Calificación de 6 en Inglés B Nivel Superior<br>en el Programa de Bachillerato Internacional)</div>
-          <div class="subSection-title yellowTitle">FRANCÉS</div>
-          <div class="experienceContent">Básico</div>
+          <div class="profSkills-contentContainer">
+            <div class="skill profSkillItem" id="pro">Proactividad y eficiencia</div>
+            <div class="skill profSkillItem" id="inv">Investigación</div>
+            <div class="skill profSkillItem" id="ar">Apredizaje rápido</div>
+            <div class="skill profSkillItem" id="cr">Creatividad</div>
+            <div class="skill profSkillItem" id="lid">Liderazgo</div>
+            <div class="skill profSkillItem" id="ad">Adaptación al cambio y versatilidad</div>
+          </div>
+          <div class="bottomBlankSpace"></div>
+        </div>
+  
       </div>
-      <div class="extraSection-child">
-        <a class="sectionTitle yellowTitle" href="#extraSection">EXTRACURRICULAR</a>
-        <div class="experienceContent">Seleccionado nacional de tenis de mesa<br>(2010)</div>
-        <div class="experienceContent">Campeón de tenis de mesa en las Olimpieadas Ramón Mugica)<br>(2013-2019</div>
+  
+      <div class="blueSection" id="educationSection">
+        <div class=" blueSection-titleContainer">
+          <a class="sectionTitle yellowTitle" href="#educationSection">EDUCACIÓN</a>
+        </div>
+  
+        <div class="educationSection-body1">
+          <div class="subSection-title mainYellow" id="edSecChildSubtitle">
+            <div>COLEGIO SAN AGUSTÍN DE CHICLAYO | PERÚ</div>
+          </div>
+          <div class="subSection-content">Programa del Diploma de Bachillerato Internacional</br>Obtención del Diploma (2013)
+          </div>
+        </div>
+  
+        <div class=" educationSection-body2">
+          <div class="subSection-title mainYellow" id="edSecChildSubtitle">
+            <div>UNIVERSIDAD DE PIURA | PERÚ</div>
+          </div>
+          <div class="subSection-content">Ingeniería Industrial y de Sistemas</br>Estudiante de último ciclo (2014-2019)
+          </div>
+        </div>
       </div>
-
+  
+      <div class="yellowSection" id="experienceSection">
+        <div class="experienceSection-titleContainer">
+          <a class="sectionTitle redTitle" href="#experienceSection">EXPERIENCIA</a>
+        </div>
+  
+        <div class="experienceSection-body1">
+          <div class="subSection-title mainRed">BASTER ESCUELA DE TENIS DE MESA | CHICLAYO</div>
+          <div class="subSection-subTitle mainRed">SECRETARIO GENERAL (2017 - ACTUALIDAD)</div>
+          <div class="experienceContent">Gestionar convenios con instituciones educativas y convenios de colaboración mutua</div>
+          <div class="experienceContent">Gestionar auspicios con instituciones privadas y públicas para el abastecimiento de la escuela</div>
+          <div class="experienceContent">Gestionar alianzas de entrenamiento con países vecinos</div>
+          <div class="experienceContent">Organización de torneos de confraternidad</div>
+          <div class="experienceContent">Elaboración del logotipo de la Escuela</div>
+        </div>
+  
+        <div class="experienceSection-body2">
+          <div class="subSection-title mainRed">MOLINERA SUDAMÉRICA | LAMBAYEQUE</div>
+          <div class="subSection-subTitle mainRed">ASISTENTE DE CONTROL DE CALIDAD (2019)</div>
+          <div class="experienceContent">Evaluar los parámetros de calidad del grano de arroz en cada etapa del proceso de secado y pilado</div>
+        </div>
+  
+        <div class="experienceSection-body3">
+          <div class="subSection-title mainRed">COLEGIO SAN AGUSTÍN | CHICLAYO</div>
+          <div class="subSection-subTitle mainRed">PROFESOR DE TENIS DE MESA (2011)</div>
+          <div class="experienceContent">Profesor del grupo de iniciación de alumnos de 8-9 años</div>
+        </div>
+  
+      </div>
+  
+      <div class="redSection" id="extraSection">
+        <div class="extraSection-child">
+            <div class=" blueSection-titleContainer">
+              <a class="sectionTitle yellowTitle" href="#extraSection">IDIOMAS</a>
+            </div>
+            <div class="subSection-title yellowTitle">ESPAÑOL</div>
+            <div class="experienceContent">Nativo</div>
+            <div class="subSection-title yellowTitle">INGLÉS</div>
+            <div class="experienceContent">Avanzado. Nivel B2+ en el MCER<br>(Calificación de 6 en Inglés B Nivel Superior<br>en el Programa de Bachillerato Internacional)</div>
+            <div class="subSection-title yellowTitle">FRANCÉS</div>
+            <div class="experienceContent">Básico</div>
+        </div>
+        <div class="extraSection-child">
+          <a class="sectionTitle yellowTitle" href="#extraSection">EXTRACURRICULAR</a>
+          <div class="experienceContent">Seleccionado nacional de tenis de mesa<br>(2010)</div>
+          <div class="experienceContent">Campeón de tenis de mesa en las Olimpieadas Ramón Mugica)<br>(2013-2019</div>
+        </div>
+  
+      </div>
     </div>
 
     <div class="blueSection" id="footer">
-      <a href="https://github.com/JorgePasco1">
-        <img src="img/GitHub-logo.png" alt="gitHub profile">
-      </a>
-      <a href="https://www.linkedin.com/in/jorge-pasco-395996191/">
-        <img src="img/LinkedIn-logo.png" alt="gitHub profile">
-      </a>
+        <a href="https://github.com/JorgePasco1">
+          <img src="img/GitHub-logo.png" alt="gitHub profile">
+        </a>
+        <a href="https://www.linkedin.com/in/jorge-pasco-395996191/">
+          <img src="img/LinkedIn-logo.png" alt="gitHub profile">
+        </a>
     </div>
+    
   </body>
 </html>

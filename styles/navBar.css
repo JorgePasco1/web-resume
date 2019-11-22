@@ -25,3 +25,12 @@
 .headButton:hover {
   color: var(--main-red);
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky + .content {
+  padding-top: 12vh;
+}
