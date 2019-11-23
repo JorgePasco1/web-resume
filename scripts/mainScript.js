@@ -37,7 +37,7 @@ const colegioSanTitle = document.getElementById("colegioSanTitle");
 const colegioSanSubtitle = document.getElementById("colegioSanSubtitle");
 const colegioSanContent = document.getElementById("colegioSanContent");
 
-// extraSection 
+// extraSection
 const extraSection = document.getElementById("extraSection");
 const extraOffsetTop = extraSection.offsetTop;
 const idioms = document.getElementById("idioms");
@@ -48,6 +48,15 @@ const french = document.getElementById("french");
 const nationalTeam = document.getElementById("nationalTeam");
 const ormChampion = document.getElementById("ormChampion");
 
+//activeItem on navBar
+const aboutSection = document.getElementById("aboutSection");
+const aboutOffsetTop = aboutSection.offsetTop;
+const aboutLink = document.getElementById("aboutLink");
+const skillsLink = document.getElementById("skillsLink");
+const educationLink = document.getElementById("educationLink");
+const experienceLink = document.getElementById("experienceLink");
+const extraLink = document.getElementById("extraLink");
+
 const scrollFunction = () => {
   // Sticky navBar
   if (window.pageYOffset >= navBarOffsetTop) {
@@ -56,10 +65,19 @@ const scrollFunction = () => {
     navBar.classList.remove("sticky");
   }
 
+  if (window.pageYOffset >= aboutOffsetTop - 0.7 * viewportHeight && window.pageYOffset <= skillsOffsetTop - 0.5 * viewportHeight) {
+    aboutLink.classList.add("redTitle");
+  }else {
+    aboutLink.classList.remove("redTitle");
+  }
+
   // skillsSection AnimateIn
-  if (window.pageYOffset >= skillsOffsetTop - 0.7 * viewportHeight) {
+  if (window.pageYOffset >= skillsOffsetTop - 0.5 * viewportHeight && window.pageYOffset <= educationOffsetTop - 0.5 * viewportHeight) {
     skillsTitle.classList.add("contentAnimateTopIn");
     devSkillsSection.classList.add("contentAnimateTopIn");
+    skillsLink.classList.add("redTitle");
+  }else {
+    skillsLink.classList.remove("redTitle");
   }
 
   if (window.pageYOffset >= skillsOffsetTop) {
@@ -67,9 +85,12 @@ const scrollFunction = () => {
   }
 
   // educationSection AnimateIn
-  if (window.pageYOffset >= educationOffsetTop - 0.7 * viewportHeight) {
+  if (window.pageYOffset >= educationOffsetTop - 0.5 * viewportHeight && window.pageYOffset <= experienceOffsetTop - 0.5 * viewportHeight) {
     educationTitle.classList.add("contentAnimateTopIn");
     schoolEducation.classList.add("contentAnimateTopIn");
+    educationLink.classList.add("redTitle");
+  } else {
+    educationLink.classList.remove("redTitle");
   }
 
   if (window.pageYOffset >= educationOffsetTop - 0.3 * viewportHeight) {
@@ -77,11 +98,14 @@ const scrollFunction = () => {
   }
 
   //experienceSection AnimateIn
-  if (window.pageYOffset >= experienceOffsetTop - 0.7 * viewportHeight) {
+  if (window.pageYOffset >= experienceOffsetTop - 0.5 * viewportHeight && window.pageYOffset <= extraOffsetTop - 0.5 * viewportHeight) {
     experienceTitle.classList.add("contentAnimateTopIn");
     basterTitle.classList.add("contentAnimateLeftInNoDelay");
     basterSubtitle.classList.add("contentAnimateLeftInFirstDelay");
     basterContent.classList.add("contentAnimateLeftInSecondDelay");
+    experienceLink.classList.add("redTitle");
+  } else {
+    experienceLink.classList.remove("redTitle");
   }
 
   if (window.pageYOffset >= experienceOffsetTop - 0.3 * viewportHeight) {
@@ -97,7 +121,7 @@ const scrollFunction = () => {
   }
 
   // extraSection AnimateIn
-  if (window.pageYOffset >= extraOffsetTop - 0.7 * viewportHeight) {
+  if (window.pageYOffset >= extraOffsetTop - 0.5 * viewportHeight) {
     idioms.classList.add("contentAnimateTopIn");
     extracurricular.classList.add("contentAnimateTopIn");
     spanish.classList.add("contentAnimateLeftInFirstDelay");
@@ -105,7 +129,10 @@ const scrollFunction = () => {
     french.classList.add("contentAnimateLeftInThirdDelay");
     nationalTeam.classList.add("contentAnimateRightInFirstDelay");
     ormChampion.classList.add("contentAnimateRightInSecondDelay");
+    extraLink.classList.add("redTitle");
+  } else {
+    extraLink.classList.remove("redTitle");
   }
 };
 
-//TODO: Finish scrolldown animations. Make navBar active items
+//TODO: Make navBar active items
