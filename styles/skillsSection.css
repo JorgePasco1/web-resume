@@ -18,7 +18,7 @@
   justify-content: center;
 }
 
-.skillsSection-devContainer {
+#skillsSection-devContainer {
   padding: 0 5% 0 5%;
   grid-column: 1/2;
   grid-row: 2/3;
@@ -27,14 +27,16 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
   align-items: center;
+  opacity: 0;
 }
 
-.skillsSection-profSkillsContainer {
+#skillsSection-profSkillsContainer {
   grid-column: 1/2;
   grid-row: 3/4;
   display: flex;
   flex-direction: column;
   padding: 0 15% 0 10%;
+  opacity:0;
 }
 
 .yellowTitle {
@@ -45,7 +47,7 @@
   justify-self: center;
   font-family: "Segoe UI", sans-serif;
   font-weight: 900;
-  font-size: 5vh;
+  font-size: 5vmin;
 }
 
 .mainYellow {
@@ -60,7 +62,7 @@
 .skill {
   font-family: "Exo", sans-serif;
   font-weight: 800;
-  font-size: 5vh;
+  font-size: 5vmin;
   color: var(--darker-blue);
   width: 60%;
   text-align: center;
@@ -85,7 +87,7 @@
   width: 2.5vw;
   height: 2.5vw;
   border-radius: 50%;
-  border: 2px solid var(--darker-blue);
+  border: 1px solid var(--darker-blue);
 }
 
 .profSkills-titleContainer {
@@ -142,4 +144,26 @@
 
 #ad {
   grid-area: ad;
+}
+
+@media (min-width: 720px) and (max-width: 941px) {
+  .skill {
+    font-size: 4.5vmin;
+  }
+}
+
+@media (min-width: 626px) and (max-width: 719px) {
+  .skill {
+    font-size: 3.9vmin;
+  }
+}
+
+@media (max-width: 625px) {
+  .skill {
+    font-size: 3.5vmin;
+  }
+}
+
+.contentAnimateTopIn {
+  animation: slideInFromTop 500ms ease-out 0s 1 forwards;
 }

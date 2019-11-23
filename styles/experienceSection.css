@@ -25,14 +25,80 @@
   font-family: "Segoe UI", sans-serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 5vh;
+  font-size: 5vmin;
 }
 
 .experienceContent {
   font-family: "Exo", sans-serif;
   font-weight: 600;
-  font-size: 4vh;
+  font-size: 4vmin;
   color: var(--main-blue);
   text-align: center;
-  margin: 1.5vh 0 1.5vh 0;
+  margin: 1.5vmin 0 1.5vmin 0;
+}
+
+@media (min-width: 779px) and (max-width: 980px) {
+  #experienceSection .subSection-title {
+    font-size: 4.5vmin;
+  }
+
+  .subSection-subTitle {
+    font-size: 4.5vmin;
+  }
+
+  .experienceContent {
+    font-size: 3.5vmin;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 780px) {
+  #experienceSection .subSection-title {
+    font-size: 4vmin;
+  }
+
+  .subSection-subTitle {
+    font-size: 4vmin;
+  }
+
+  .experienceContent {
+    font-size: 3vmin;
+  }
+}
+
+@media (max-width: 620px) {
+  #experienceSection .subSection-title {
+    font-size: 3.5vmin;
+  }
+
+  .subSection-subTitle {
+    font-size: 3.5vmin;
+  }
+
+  .experienceContent {
+    font-size: 3.5vmin;
+  }
+}
+
+#basterEscuela > div {
+  opacity: 0;
+}
+
+#molineraSuda > div {
+  opacity: 0;
+}
+
+#colegioSan > div {
+  opacity: 0;
+}
+
+.contentAnimateLeftInNoDelay {
+  animation: slideInFromLeft 500ms ease-out 0s 1 forwards;
+}
+
+.contentAnimateLeftInFirstDelay {
+  animation: slideInFromLeft 500ms ease-out 250ms 1 forwards;
+}
+
+.contentAnimateLeftInSecondDelay {
+  animation: slideInFromLeft 500ms ease-out 500ms 1 forwards;
 }

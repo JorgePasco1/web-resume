@@ -23,3 +23,19 @@
   margin: 0;
   color: var(--darker-blue);
 }
+
+#idioms, #experience, #spanish, #english, #french, #nationalTeam, #ormChampion {
+  opacity: 0;
+}
+
+.contentAnimateLeftInThirdDelay {
+  animation: slideInFromLeft 500ms ease-out 750ms 1 forwards;
+}
+
+.contentAnimateRightInFirstDelay {
+  animation: slideInFromRight 500ms ease-out 250ms 1 forwards;
+}
+
+.contentAnimateRightInSecondDelay {
+  animation: slideInFromRight 500ms ease-out 500ms 1 forwards;
+}

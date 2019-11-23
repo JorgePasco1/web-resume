@@ -1,8 +1,8 @@
-:root{
+:root {
   --main-blue: #011627;
   --main-yellow: #ff9f1c;
-  --main-red: #D1021C;
-  --darker-blue: #000E19;
+  --main-red: #d1021c;
+  --darker-blue: #000e19;
 }
 
 body {
@@ -41,15 +41,15 @@ body {
 
 .name {
   font-family: "Exo", sans-serif;
-  color: var(--main-yellow) ;
-  font-size: 12vh;
+  color: var(--main-yellow);
+  font-size: 12vmin;
   font-weight: bold;
 }
 
 .speciality {
   font-family: "Exo", sans-serif;
   color: white;
-  font-size: 4.23vh;
+  font-size: 4.23vmin;
   font-weight: 500;
   font-style: italic;
 }
@@ -57,7 +57,7 @@ body {
 .email {
   font-family: "Exo", sans-serif;
   color: white;
-  font-size: 4.23vh;
+  font-size: 4.23vmin;
   margin-top: 2%;
   margin-bottom: 2%;
   font-weight: normal;
@@ -66,16 +66,106 @@ body {
 .phone {
   font-family: "Exo", sans-serif;
   color: white;
-  font-size: 4.23vh;
+  font-size: 4.23vmin;
   font-weight: normal;
 }
 
-.header-child-right{
+.header-child-right {
+  opacity: 0;
   display: flex;
   align-items: center;
+  animation: slideInFromRight 500ms ease-out 200ms 1 forwards;
 }
 
 #profile-picture {
-  width: 45vh;
+  width: 45vmin;
   border-radius: 100%;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header-child-left {
+  opacity: 0;
+  animation: slideInFromLeft 500ms ease-out 200ms 1 forwards;
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .name {
+    font-size: 10vmin;
+  }
+  .speciality {
+    font-size: 4vmin;
+  }
+  .email {
+    font-size: 4vmin;
+  }
+  .phone {
+    font-size: 4vmin;
+  }
+
+  #profile-picture {
+    width: 39vmin;
+  }
+}
+
+@media (min-width: 831px) and (max-width: 1000px) {
+  .name {
+    font-size: 8vmin;
+  }
+  .speciality {
+    font-size: 3.5vmin;
+  }
+  .email {
+    font-size: 3.5vmin;
+  }
+  .phone {
+    font-size: 3.5vmin;
+  }
+
+  #profile-picture {
+    width: 34vmin;
+  }
+}
+
+@media (max-width: 830px) {
+  .header {
+    height: 40vh;
+  }
+
+  .name {
+    font-size: 6vmin;
+  }
+  .speciality {
+    font-size: 3vmin;
+  }
+  .email {
+    font-size: 3vmin;
+  }
+  .phone {
+    font-size: 3vmin;
+  }
+
+  #profile-picture {
+    width: 30vmin;
+  }
 }

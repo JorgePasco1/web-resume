@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="./styles/extraSection.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/anchor.css">
-    <script src="./scripts/sticky.js" defer></script>
+    <script src="./scripts/mainScript.js" defer></script>
   </head>
   <body>
     <div class="blueSection header">
       <div class="header-content">
 
-        <div class="header-child">
+        <div class="header-child header-child-left">
           <h1 class="header-left-child name">JORGE PASCO</h1>
           <h2 class="header-left-child speciality">Planificación Estratégica | Tecnologías </br>de Información</h2>
           <h2 class="header-left-child email">jorgepascosoto@gmail.com</h2>
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div class="blueSection navBar" id="navBar">
+    <div class="blueSection" id="navBar">
       
       <div class="buttonContainer">
           <a class="headButton" href="#aboutAnchor">SOBRE MÍ</a>
@@ -61,7 +61,7 @@
       <div class="yellowSection" id="aboutSection">
 
         <div class="aboutSection-titleContainer">
-          <a class="sectionTitle redTitle" href="#aboutAnchor">SOBRE MÍ</a>
+          <a class="sectionTitle redTitle" id="aboutTitle" href="#aboutAnchor">SOBRE MÍ</a>
         </div>
         
         <div class="aboutSection-body">
@@ -75,10 +75,10 @@
       <div class="anchor" id="skillsAnchor"></div>
       <div class="redSection" id="skillsSection">
         <div class="blueSection-titleContainer">
-          <a class="sectionTitle yellowTitle" href="#skillsAnchor">HABILIDADES</a>
+          <a class="sectionTitle yellowTitle" id="skillsTitle" href="#skillsAnchor">HABILIDADES</a>
         </div>
   
-        <div class="skillsSection-devContainer">
+        <div id="skillsSection-devContainer">
           <div class="subSection-title mainYellow">
             <div>DESARROLLO</div>
           </div>
@@ -157,7 +157,7 @@
           </div>
         </div>
   
-        <div class="skillsSection-profSkillsContainer">
+        <div id="skillsSection-profSkillsContainer">
           <div class="profSkills-titleContainer">
             <div class="subSection-title mainYellow">
               APTITUDES PROFESIONALES
@@ -178,20 +178,20 @@
       
       <div class="anchor" id="educationAnchor"></div>
       <div class="blueSection" id="educationSection">
-        <div class=" blueSection-titleContainer">
-          <a class="sectionTitle yellowTitle" href="#educationAnchor">EDUCACIÓN</a>
+        <div class="blueSection-titleContainer">
+          <a class="sectionTitle yellowTitle" href="#educationAnchor" id="educationTitle">EDUCACIÓN</a>
         </div>
   
-        <div class="educationSection-body1">
-          <div class="subSection-title mainYellow" id="edSecChildSubtitle">
+        <div class="edSecChild" id="schoolEducation">
+          <div class="subSection-title mainYellow">
             <div>COLEGIO SAN AGUSTÍN DE CHICLAYO | PERÚ</div>
           </div>
           <div class="subSection-content">Programa del Diploma de Bachillerato Internacional</br>Obtención del Diploma (2013)
           </div>
         </div>
   
-        <div class=" educationSection-body2">
-          <div class="subSection-title mainYellow" id="edSecChildSubtitle">
+        <div class="edSecChild" id="universityEducation">
+          <div class="subSection-title mainYellow">
             <div>UNIVERSIDAD DE PIURA | PERÚ</div>
           </div>
           <div class="subSection-content">Ingeniería Industrial y de Sistemas</br>Estudiante de último ciclo (2014-2019)
@@ -202,29 +202,31 @@
       <div class="anchor" id="experienceAnchor"></div>
       <div class="yellowSection" id="experienceSection">
         <div class="experienceSection-titleContainer">
-          <a class="sectionTitle redTitle" href="#experienceAnchor">EXPERIENCIA</a>
+          <a class="sectionTitle redTitle" id="experienceTitle" href="#experienceAnchor">EXPERIENCIA</a>
         </div>
   
-        <div class="experienceSection-body1">
-          <div class="subSection-title mainRed">BASTER ESCUELA DE TENIS DE MESA | CHICLAYO</div>
-          <div class="subSection-subTitle mainRed">SECRETARIO GENERAL (2017 - ACTUALIDAD)</div>
-          <div class="experienceContent">Gestionar convenios con instituciones educativas y convenios de colaboración mutua</div>
-          <div class="experienceContent">Gestionar auspicios con instituciones privadas y públicas para el abastecimiento de la escuela</div>
-          <div class="experienceContent">Gestionar alianzas de entrenamiento con países vecinos</div>
-          <div class="experienceContent">Organización de torneos de confraternidad</div>
-          <div class="experienceContent">Elaboración del logotipo de la Escuela</div>
+        <div id="basterEscuela">
+          <div class="subSection-title mainRed" id="basterTitle">BASTER ESCUELA DE TENIS DE MESA | CHICLAYO</div>
+          <div class="subSection-subTitle mainRed" id="basterSubtitle">SECRETARIO GENERAL (2017 - ACTUALIDAD)</div>
+          <div id="basterContent">
+            <div class="experienceContent">Gestionar convenios con instituciones educativas y convenios de colaboración mutua</div>
+            <div class="experienceContent">Gestionar auspicios con instituciones privadas y públicas para el abastecimiento de la escuela</div>
+            <div class="experienceContent">Gestionar alianzas de entrenamiento con países vecinos</div>
+            <div class="experienceContent">Organización de torneos de confraternidad</div>
+            <div class="experienceContent">Elaboración del logotipo de la Escuela</div>
+          </div>
         </div>
   
-        <div class="experienceSection-body2">
-          <div class="subSection-title mainRed">MOLINERA SUDAMÉRICA | LAMBAYEQUE</div>
-          <div class="subSection-subTitle mainRed">ASISTENTE DE CONTROL DE CALIDAD (2019)</div>
-          <div class="experienceContent">Evaluar los parámetros de calidad del grano de arroz en cada etapa del proceso de secado y pilado</div>
+        <div id="molineraSuda">
+          <div class="subSection-title mainRed" id="molineraTitle">MOLINERA SUDAMÉRICA | LAMBAYEQUE</div>
+          <div class="subSection-subTitle mainRed" id="molineraSubtitle">ASISTENTE DE CONTROL DE CALIDAD (2019)</div>
+          <div class="experienceContent" id="molineraContent">Evaluar los parámetros de calidad del grano de arroz en cada etapa del proceso de secado y pilado</div>
         </div>
   
-        <div class="experienceSection-body3">
-          <div class="subSection-title mainRed">COLEGIO SAN AGUSTÍN | CHICLAYO</div>
-          <div class="subSection-subTitle mainRed">PROFESOR DE TENIS DE MESA (2011)</div>
-          <div class="experienceContent">Profesor del grupo de iniciación de alumnos de 8-9 años</div>
+        <div id="colegioSan">
+          <div class="subSection-title mainRed" id="colegioSanTitle">COLEGIO SAN AGUSTÍN | CHICLAYO</div>
+          <div class="subSection-subTitle mainRed" id="colegioSanSubtitle">PROFESOR DE TENIS DE MESA (2011)</div>
+          <div class="experienceContent" id="colegioSanContent">Profesor del grupo de iniciación de alumnos de 8-9 años</div>
         </div>
   
       </div>
@@ -232,30 +234,36 @@
       <div class="anchor" id="extraAnchor"></div>
       <div class="redSection" id="extraSection">
         <div class="extraSection-child">
-            <div class=" blueSection-titleContainer">
-              <a class="sectionTitle yellowTitle" href="#extraAnchor">IDIOMAS</a>
-            </div>
+          <div class=" blueSection-titleContainer">
+            <a class="sectionTitle yellowTitle" id="idioms" href="#extraAnchor">IDIOMAS</a>
+          </div>
+          <div id="spanish">
             <div class="subSection-title yellowTitle">ESPAÑOL</div>
             <div class="experienceContent">Nativo</div>
+          </div>
+          <div id="english">
             <div class="subSection-title yellowTitle">INGLÉS</div>
             <div class="experienceContent">Avanzado. Nivel B2+ en el MCER<br>(Calificación de 6 en Inglés B Nivel Superior<br>en el Programa de Bachillerato Internacional)</div>
+          </div>
+          <div id="french">
             <div class="subSection-title yellowTitle">FRANCÉS</div>
             <div class="experienceContent">Básico</div>
+          </div>
         </div>
         <div class="extraSection-child">
-          <a class="sectionTitle yellowTitle" href="#extraSection">EXTRACURRICULAR</a>
-          <div class="experienceContent">Seleccionado nacional de tenis de mesa<br>(2010)</div>
-          <div class="experienceContent">Campeón de tenis de mesa en las Olimpieadas Ramón Mugica)<br>(2013-2019</div>
+          <a class="sectionTitle yellowTitle" id="extracurricular" href="#extraSection">EXTRACURRICULAR</a>
+          <div class="experienceContent" id="nationalTeam">Seleccionado nacional de tenis de mesa<br>(2010)</div>
+          <div class="experienceContent" id="ormChampion">Campeón de tenis de mesa en las Olimpiadas Ramón Mugica)<br>(2013-2019</div>
         </div>
   
       </div>
     </div>
 
     <div class="blueSection" id="footer">
-        <a href="https://github.com/JorgePasco1">
+        <a href="https://github.com/JorgePasco1" target="blank">
           <img src="img/GitHub-logo.png" alt="gitHub profile">
         </a>
-        <a href="https://www.linkedin.com/in/jorge-pasco-395996191/">
+        <a href="https://www.linkedin.com/in/jorge-pasco-395996191/" target="blank">
           <img src="img/LinkedIn-logo.png" alt="gitHub profile">
         </a>
     </div>

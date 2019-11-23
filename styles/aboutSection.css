@@ -21,8 +21,24 @@
 .sectionTitle {
   text-decoration: none;
   font-family: "Segoe UI", sans-serif;
-  font-size: 6.5vh;
+  font-size: 6.5vmin;
   font-weight: 900;
+  opacity: 0;
+}
+
+#aboutTitle {
+  animation: slideInFromTop 500ms ease-out 200ms 1 forwards;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .sectionTitle:hover {
@@ -42,11 +58,19 @@
 .main-text {
   font-family: "Exo", sans-serif;
   font-weight: 900;
-  font-size: 3.5vh;
+  font-size: 3.5vmin;
   color: var(--main-blue);
   text-align: justify;
+  opacity: 0;
+  animation: slideInFromTop 500ms ease-out 200ms 1 forwards;
 }
 
 .bullet {
   color: var(--main-red);
+}
+
+@media (max-width: 670px) {
+  .main-text{
+    font-size: 3.2vmin;
+  }
 }

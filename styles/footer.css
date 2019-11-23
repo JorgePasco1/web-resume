@@ -12,9 +12,10 @@
 
 
 .blueSection a img {
-  height: 7vh;
+  height: 7vmin;
   width: auto;
-  margin: 0 2vh 0 2vh;
+  margin: 0 2vmin 0 2vmin;
+  transition: filter 150ms linear;
   filter: saturate(0);
 }
 
