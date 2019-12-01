@@ -1,6 +1,6 @@
 #extraSection {
-  height: 67vh;
   display: flex;
+  padding: 2% 0 2% 0;
 }
 
 .extraSection-child {

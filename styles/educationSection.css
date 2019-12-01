@@ -1,8 +1,8 @@
 #educationSection {
-  height: 72vmin;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.7fr 1fr 1fr;
+  padding-bottom: 2%;
 }
 
 .edSecChild {
@@ -15,4 +15,5 @@
   font-size: 5vmin;
   color: white;
   text-align: center;
+  margin: 2% 0 1% 0;
 }
